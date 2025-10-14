@@ -54,7 +54,8 @@ You can limit the tests to specific functions:
 ./run_tests.sh strlen memcpy
 
 ```
-Will only run the tests for "ft_strlen" and "ft_memcpy" 
+Will only run the tests for "ft_strlen" and "ft_memcpy".
+
 To run the bonus, you can use either -b or --bonus:
 ```bash
 
