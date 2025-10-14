@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:03:14 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:25:49 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:22:10 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ static void free_simple_list_and_contents(t_list *lst)
     }
 }
 
-int group_lstlast(void)
+size_t group_lstlast(void)
 {
 	group_start("lstlast");
 

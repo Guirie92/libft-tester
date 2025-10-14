@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:02:38 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:26:43 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:22:17 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static t_list *lstnew(void *content)
     return new;
 }
 
-int group_lstnew(void)
+size_t group_lstnew(void)
 {
 	group_start("lstnew");
 

@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:03:26 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:23:04 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:21:50 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ static int cmp_lists(t_list *a, t_list *b)
     return a == NULL && b == NULL;
 }
 
-int group_lstadd_back(void)
+size_t group_lstadd_back(void)
 {
 	group_start("lstadd_back");
 

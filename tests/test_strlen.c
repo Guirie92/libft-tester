@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:04:51 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:46:43 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:23:40 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <string.h>
 #include "../../libft.h"
 
-int group_strlen(void)
+size_t group_strlen(void)
 {
     group_start("strlen");
 

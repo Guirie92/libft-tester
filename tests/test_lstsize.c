@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:03:04 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:27:00 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:22:30 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ static void free_list(t_list *lst)
     }
 }
 
-int group_lstsize(void)
+size_t group_lstsize(void)
 {
 	group_start("lstsize");
 

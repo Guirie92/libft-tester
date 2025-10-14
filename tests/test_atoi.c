@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:58:28 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 16:16:33 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:18:56 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include <stdio.h>
 #include "../../libft.h"
 
-int group_atoi(void)
+size_t group_atoi(void)
 {
 
 	group_start("atoi");

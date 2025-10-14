@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:40:18 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:28:54 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:22:40 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include "../../libft.h"
 #define SIGN_OK(e,g) (((e) == 0 && (g) == 0) || ((e) < 0 && (g) < 0) || ((e) > 0 && (g) > 0))
 
-int group_memcmp(void)
+size_t group_memcmp(void)
 {
     group_start("memcmp");
 

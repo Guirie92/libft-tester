@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:16:26 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:46:17 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:23:34 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <stdlib.h>
 #include "../../libft.h"
 
-int group_strjoin(void)
+size_t group_strjoin(void)
 {
 	group_start("strjoin");
     

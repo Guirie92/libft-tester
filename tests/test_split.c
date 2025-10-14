@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:00:56 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:43:54 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:23:18 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 #include <stdlib.h>
 #include "../../libft.h"
 
-static int compare_string_arrays(char **expected, char **got)
+static size_t compare_string_arrays(char **expected, char **got)
 {
     if (expected == NULL && got == NULL) return 1;
     if (expected == NULL || got == NULL) return 0;
     
-    int i = 0;
+    size_t i = 0;
     while (expected[i] != NULL && got[i] != NULL) {
         if (strcmp(expected[i], got[i]) != 0) return 0;
         i++;
@@ -55,7 +55,7 @@ static char **create_expected_array(const char **strings)
     return arr;
 }
 
-int group_split(void)
+size_t group_split(void)
 {
 	group_start("split");
 

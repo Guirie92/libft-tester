@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:12:36 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 13:12:38 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:22:45 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <string.h>
 #include "../../libft.h"
 
-int group_memmove(void)
+size_t group_memmove(void)
 {
     group_start("memmove");
 

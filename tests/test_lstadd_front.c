@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:02:53 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:22:53 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:21:54 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ static void free_list(t_list *lst)
     }
 }
 /* subsets 1, 3, 4, and 5 crash, so they're enabled until I implement a way to catch those crashes */
-int group_lstadd_front(void)
+size_t group_lstadd_front(void)
 {
 	//return 1;
 	group_start("lstadd_front");

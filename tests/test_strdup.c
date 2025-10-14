@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:59:40 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:45:12 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:23:26 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static void check_and_free(const char *src, char *exp_ptr, char *got_ptr)
     }
 }
 	
-int group_strdup(void)
+size_t group_strdup(void)
 {
 	group_start("strdup");
 

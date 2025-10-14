@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:37:45 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 15:40:06 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:22:38 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <string.h>
 #include "../../libft.h"
 
-int group_memchr(void)
+size_t group_memchr(void)
 {
     group_start("memchr");
 

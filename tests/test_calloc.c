@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:58:39 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:16:15 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:19:17 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include <stdio.h>
 #include "../../libft.h"
 
-int group_calloc(void)
+size_t group_calloc(void)
 {
 	group_start("calloc");
 

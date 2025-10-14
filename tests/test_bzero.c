@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:02:27 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 15:38:05 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:19:13 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <string.h>
 #include "../../libft.h"
 
-int group_bzero(void)
+size_t group_bzero(void)
 {
     group_start("bzero");
 

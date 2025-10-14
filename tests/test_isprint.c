@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 11:47:17 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 15:39:11 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:21:40 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <ctype.h>
 #include "../../libft.h"
 
-int group_isprint(void)
+size_t group_isprint(void)
 {
     group_start("isprint");
 

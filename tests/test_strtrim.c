@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:00:48 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:47:53 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:24:00 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <stdlib.h>
 #include "../../libft.h"
 
-int group_strtrim(void)
+size_t group_strtrim(void)
 {
 	group_start("strtrim");
 

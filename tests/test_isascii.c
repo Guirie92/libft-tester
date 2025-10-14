@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 11:46:42 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 15:39:04 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:21:36 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <ctype.h>
 #include "../../libft.h"
 
-int group_isascii(void)
+size_t group_isascii(void)
 {
     group_start("isascii");
 

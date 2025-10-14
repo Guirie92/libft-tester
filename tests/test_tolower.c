@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:29:53 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 15:39:47 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:24:07 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <ctype.h>
 #include "../../libft.h"
 
-int group_tolower(void)
+size_t group_tolower(void)
 {
     group_start("tolower");
 

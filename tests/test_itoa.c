@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:01:05 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 16:43:07 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:21:42 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include <stdlib.h>
 #include "../../libft.h"
 
-int group_itoa(void)
+size_t group_itoa(void)
 {
 	group_start("itoa");
 

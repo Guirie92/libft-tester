@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:30:04 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:48:34 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:24:10 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <ctype.h>
 #include "../../libft.h"
 
-int group_toupper(void)
+size_t group_toupper(void)
 {
     group_start("toupper");
 

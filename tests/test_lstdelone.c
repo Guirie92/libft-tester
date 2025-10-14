@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:03:37 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:24:01 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:22:01 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static void dummy_del(void *content)
     free(content);
 }
 
-int group_lstdelone(void)
+size_t group_lstdelone(void)
 {
 	group_start("lstdelone");
 

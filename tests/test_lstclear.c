@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:03:53 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:23:38 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:21:58 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static void dummy_del(void *content)
     free(content);
 }
 
-int group_lstclear(void)
+size_t group_lstclear(void)
 {
 	group_start("lstclear");
 

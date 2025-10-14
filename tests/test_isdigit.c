@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 11:45:01 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 15:39:07 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:21:38 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <ctype.h>
 #include "../../libft.h"
 
-int group_isdigit(void)
+size_t group_isdigit(void)
 {
     group_start("isdigit");
 

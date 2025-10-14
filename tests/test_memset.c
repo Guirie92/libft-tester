@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 12:50:08 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:40:36 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:22:47 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <string.h>
 #include "../../libft.h"
 
-int group_memset(void)
+size_t group_memset(void)
 {
     group_start("memset");
 

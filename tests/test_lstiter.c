@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:04:04 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:25:05 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:22:05 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ static void free_str_list(t_list *lst)
     }
 }
 
-int group_lstiter(void)
+size_t group_lstiter(void)
 {
 	group_start("lstiter");
 

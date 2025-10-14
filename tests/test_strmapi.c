@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:01:17 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:47:27 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:23:44 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static char f_index_add(unsigned int i, char c) { return c + i; }
 
 static char f_identity(unsigned int i, char c) { (void)i; return c; }
 
-int group_strmapi(void)
+size_t group_strmapi(void)
 {
 	group_start("strmapi");
 

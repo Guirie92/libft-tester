@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:18:06 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:46:30 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:23:36 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <bsd/string.h>
 #include "../../libft.h"
 
-int group_strlcat(void)
+size_t group_strlcat(void)
 {
     group_start("strlcat");
 

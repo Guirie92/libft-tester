@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:02:28 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:43:19 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:30:22 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static void putnbr_fd(int n, int fd)
     write(fd, &c, 1);
 }
 
-int group_putnbr_fd(void)
+size_t group_putnbr_fd(void)
 {
 	group_start("putnbr_fd");
     fflush(stdout);

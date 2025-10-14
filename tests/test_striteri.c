@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:01:26 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:46:06 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:23:30 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static void test_func_null_third(unsigned int i, char *c)
         *c = '\0';
 }
 
-int group_striteri(void)
+size_t group_striteri(void)
 {
 	group_start("striteri");
 

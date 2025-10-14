@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:33:33 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:44:04 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:23:21 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <string.h>
 #include "../../libft.h"
 
-int group_strchr(void)
+size_t group_strchr(void)
 {
     group_start("strchr");
 

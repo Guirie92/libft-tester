@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:59:19 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 20:48:15 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:24:03 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static void free_and_ok(char *s1, char *s2)
     SUBTEST_OK();
 }
 
-int group_substr(void)
+size_t group_substr(void)
 {
 	group_start("substr");
     char *got;

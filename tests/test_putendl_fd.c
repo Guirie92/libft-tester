@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:02:14 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 19:41:03 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:22:52 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static void putendl_fd(char *s, int fd)
 	write(fd, "\n", 1);
 }
 
-int group_putendl_fd(void)
+size_t group_putendl_fd(void)
 {
 	group_start("putendl_fd");
 

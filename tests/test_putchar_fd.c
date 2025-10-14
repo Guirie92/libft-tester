@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:01:40 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 19:39:35 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:22:49 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <fcntl.h>
 #include "../../libft.h"
 
-int group_putchar_fd(void)
+size_t group_putchar_fd(void)
 {
 	group_start("putchar_fd");
 

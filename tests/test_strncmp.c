@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:31:00 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 15:38:02 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:23:52 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <string.h>
 #include "../../libft.h"
 
-int group_strncmp(void)
+size_t group_strncmp(void)
 {
     group_start("strncmp");
 

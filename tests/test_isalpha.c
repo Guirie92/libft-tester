@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 11:44:26 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 15:39:01 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/14 22:19:30 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <ctype.h>
 #include "../../libft.h"
 
-int group_isalpha(void)
+size_t group_isalpha(void)
 {
     group_start("isalpha");
 
