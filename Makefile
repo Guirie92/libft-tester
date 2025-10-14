@@ -6,7 +6,7 @@
 #    By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 22:02:04 by guillsan          #+#    #+#              #
-#    Updated: 2025/10/14 20:13:45 by guillsan         ###   ########.fr        #
+#    Updated: 2025/10/14 22:02:55 by guillsan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,8 +45,8 @@ TEST_SRCS := $(filter-out $(BONUS_TEST_SRCS), $(TEST_SRCS))
 endif
 
 TEST_OBJS = $(TEST_SRCS:.c=.o)
-ORCH = tests_libft.c
-NAME = libft_tests
+ORCH = libft_tester.c
+NAME = libft_tester
 
 # libft.a should be present in this directory (run_tests.sh copies it)
 LIBFT_ARCHIVE = libft.a
