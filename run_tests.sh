@@ -50,7 +50,7 @@ fi
 cp "$TARGET_ROOT/libft.a" "$SCRIPT_DIR/libft.a"
 
 # build tests (pass TEST_BONUS=1 to enable bonus test registration/build)
-echo "Compiling libft_tests..."
+echo "Compiling libft_tester..."
 if [ "$INCLUDE_BONUS" -eq 1 ]; then
   # run fclean in tester (ignore failure), then copy libft.a, then build with bonus
   ( cd "$SCRIPT_DIR" && make -s fclean >/dev/null 2>&1 || true )
@@ -69,7 +69,7 @@ else
 fi
 
 # run tests (pass groups optionally)
-BINARY="$SCRIPT_DIR/libft_tests"
+BINARY="$SCRIPT_DIR/libft_tester"
 
 if [ ! -x "$BINARY" ]; then
     echo "Error: test binary not found or not executable: $BINARY"

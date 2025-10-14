@@ -17,7 +17,7 @@
 /* registry: name -> runner function
  * The same names are the ones shown on the command line/output.
  */
-typedef int (*t_groupfn)(void);
+typedef size_t (*t_groupfn)(void);
 typedef struct s_group
 {
 	const char *name;
@@ -73,12 +73,12 @@ static t_group g_groups[] =
 #endif
 };
 
-static const int g_groups_count = sizeof(g_groups) / sizeof(g_groups[0]);
+static const size_t g_groups_count = sizeof(g_groups) / sizeof(g_groups[0]);
 
 int main(int argc, char **argv)
 {
 	
-	int total_failures = 0;
+	size_t total_failures = 0;
 	size_t functions_passed = 0;
 	size_t run_all = (argc == 1);
 
@@ -99,9 +99,9 @@ int main(int argc, char **argv)
 	}
 
 	if (total_failures == 0)
-		printf("\n\n" CLR_GREEN "All tests passed (%d)\n\n" CLR_RESET, functions_passed);
+		printf("\n\n" CLR_GREEN "All tests passed (%zu)\n\n" CLR_RESET, functions_passed);
 	else
-		printf("\n\n" CLR_RED "Tests failed: %d\n\n" CLR_RESET, total_failures);
+		printf("\n\n" CLR_RED "Tests failed: %zu\n\n" CLR_RESET, total_failures);
 
 	return (total_failures == 0 ? 0 : 1);
 }
