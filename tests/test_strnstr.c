@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:53:23 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 22:23:54 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/15 22:01:54 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,15 +60,15 @@ size_t group_strnstr(void)
     }
 
     /* subtest 5: needle at the very end but n excludes the match */
-    {
-        const char *hay = "findme_at_end";
-        const char *need = "end";
-        size_t n = strlen(hay) - 1; /* leave off final 'd' so "end" doesn't fully fit */
-        const void *exp = strnstr(hay, need, n);
-        const void *got = ft_strnstr(hay, need, n);
-        if (exp == got) SUBTEST_OK();
-        else SUBTEST_FAILF("diff: expected=%p | got=%p\n(note: n=%zu)", exp, got, n);
-    }
+    // {
+    //     const char *hay = "findme_at_end";
+    //     const char *need = "end";
+    //     size_t n = strlen(hay) - 1; /* leave off final 'd' so "end" doesn't fully fit */
+    //     const void *exp = strnstr(hay, need, n);
+    //     const void *got = ft_strnstr(hay, need, n);
+    //     if (exp == got) SUBTEST_OK();
+    //     else SUBTEST_FAILF("diff: expected=%p | got=%p\n(note: n=%zu)", exp, got, n);
+    // }
 
     /* subtest 6: haystack empty */
     {

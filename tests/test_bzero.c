@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:02:27 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 22:19:13 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/15 22:01:32 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,9 @@ size_t group_bzero(void)
     {
         char buf1[5] = "abcd";
         char buf2[5] = "abcd";
-        bzero(buf1, 0);
-        ft_bzero(buf2, 0);
+        int size = 0;
+        bzero(buf1, size);
+        ft_bzero(buf2, size);
         if (memcmp(buf1, buf2, 4) == 0) SUBTEST_OK();
         else SUBTEST_FAILF("diff: expected='%s' | got='%s'", buf1, buf2);
     }
@@ -42,8 +43,9 @@ size_t group_bzero(void)
     {
         char buf1[1] = {'X'};
         char buf2[1] = {'X'};
-        bzero(buf1, 0);
-        ft_bzero(buf2, 0);
+        int size = 0;
+        bzero(buf1, size);
+        ft_bzero(buf2, size);
         if (memcmp(buf1, buf2, 1) == 0) SUBTEST_OK();
         else SUBTEST_FAILF("diff: expected='%02X' | got='%02X'", (unsigned char)buf1[0], (unsigned char)buf2[0]);
     }
