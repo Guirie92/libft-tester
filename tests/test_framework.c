@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:07:45 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/18 08:04:33 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/18 08:55:52 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,10 @@ void group_start(const char *name)
 {
     g_group_name = name;
     g_sub_count = 0;
+
+    /* Print compact group header */
+	printf("\n%s%-12s%s:", CLR_CYAN, g_group_name ? g_group_name : "(unknown)", CLR_RESET);
+    flush_sleep();
 }
 
 void group_subtest(int ok, const char *fmt, ...)
@@ -69,9 +73,7 @@ void group_subtest(int ok, const char *fmt, ...)
 /* finish group: print grouped line then detailed failures, return failures count */
 size_t group_finish()
 {
-    /* Print compact group header + statuses */
-	printf("\n%s%-12s%s:", CLR_CYAN, g_group_name ? g_group_name : "(unknown)", CLR_RESET);
-    flush_sleep();
+    /* Print statuses */
     for (size_t i = 0; i < g_sub_count; ++i)
     {
 		if (g_subs[i].ok)
