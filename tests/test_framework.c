@@ -6,7 +6,7 @@
 /*   By: guillsan <guillsan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:07:45 by guillsan          #+#    #+#             */
-/*   Updated: 2025/10/14 22:29:22 by guillsan         ###   ########.fr       */
+/*   Updated: 2025/10/18 08:04:33 by guillsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,13 @@ static const char *g_group_name = NULL;
 static t_sub g_subs[MAX_SUBTESTS];
 static size_t g_sub_count = 0;
 
+static void flush_sleep()
+{
+    if (!g_b_flush)
+        return;
+    fflush(stdout);
+    usleep((g_flush_seconds * 1000) * 1000); // 40ms by default
+}
 void group_start(const char *name)
 {
     g_group_name = name;
@@ -64,18 +71,14 @@ size_t group_finish()
 {
     /* Print compact group header + statuses */
 	printf("\n%s%-12s%s:", CLR_CYAN, g_group_name ? g_group_name : "(unknown)", CLR_RESET);
+    flush_sleep();
     for (size_t i = 0; i < g_sub_count; ++i)
     {
 		if (g_subs[i].ok)
             printf(" %s%ld.OK%s%s ", CLR_GREEN, g_subs[i].idx, SYMBOL_OK, CLR_RESET);
         else
             printf(" %s%ld.KO%s%s ", CLR_RED, g_subs[i].idx, SYMBOL_KO, CLR_RESET);
-        
-        if (g_b_flush)
-        {
-            fflush(stdout);
-            usleep((g_flush_seconds * 1000) * 1000); // 40ms by default
-        }
+        flush_sleep();
     }
     
     /* Print details for failures (one-by-one) */
