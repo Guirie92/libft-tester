@@ -1,21 +1,21 @@
 # Libft Tester
 
 A lightweight, self-contained tester for **42’s libft**.  
-It builds your `libft.a`, compiles the tests, and runs them — just like **Francinette** does.
+It builds your `libft.a`, compiles the tests, and runs them, just like **Francinette** does.
 
 
 
 ## Project Structure
 
 ```
-libft/ # ------------------------------- target repo
+libft/ # -------------------------------- target repo
 ├─ Makefile
 ├─ libft.h
 ├─ *.c
 └─ libft-tester/ # ---------------------- this tester
-	├─ run_tests.sh # ------------------ main script
-	├─ Makefile # ---------------------- builds test binary
-	├─ libft.a # ----------------------- copied automatically
+	├─ run_tests.sh # ------------------- main script
+	├─ Makefile # ----------------------- builds test binary
+	├─ libft.a # ------------------------ copied automatically
 	├─ libft_tester.c # ----------------- main orchestrator
 	└─ tests/
 		├─ test_framework.h
@@ -33,8 +33,9 @@ From inside the target **libft** repository:
 
 ```bash
 
-git clone https://github.com/Guirie92/tests_libft.git
-cd tests_libft
+cd libft
+git clone https://github.com/Guirie92/libft-tester.git tester # or name it as you wish
+cd tester
 ./run_tests.sh
 
 ```
@@ -68,7 +69,7 @@ To run the bonus, you can use either -b or --bonus:
 
 Each test group lives in a separate file inside tests/.
 You can easily add more tests inside the corresponding test files, or create new ones.
-For newly created files, be sure to update the `test_libft.c` and `test_framework.h` files.
+For newly created files, be sure to update the `libft-tester.c` and `test_framework.h` files.
 
 
 ## Example Output
